@@ -13,28 +13,15 @@ import java.util.Random;
 public class Vetor {
     
     private Scanner input = new Scanner(System.in);
-    private Random randomicNumber = new Random();
+    final Random randomicNumber = new Random();
     
     private int[] vetorDeInteiros;
-    private int tamanhoVetor;
+    final private int tamanhoVetor;
     
     public Vetor(int tamanhoVetor){
         this.tamanhoVetor = tamanhoVetor;
         this.vetorDeInteiros = new int[this.tamanhoVetor];
-    }
-    
-    public void criarVetor(){
-        System.out.println("digite o tamanho do vetor...\n");
-        this.tamanhoVetor = input.nextInt();        
-        if(this.tamanhoVetor > 0){
-            this.vetorDeInteiros = new int[this.tamanhoVetor];
-            System.out.println("Um vetor de tamanho " + this.tamanhoVetor + " foi criado com sicesso!!");            
-        }
-        else {
-            System.out.println("o tamanho digitado é invalido \n "
-                    + "por favor, digite um numero maior que zero.");
-        }
-    }
+    }    
     
     public void alimentarVetor(){
         for(int i = 0; i < this.vetorDeInteiros.length; i++){
