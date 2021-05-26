@@ -5,8 +5,7 @@
  */
 package Inclass;
 
-/**
- *
+/*
  * @author Jonatas
  */
 public class Recursividade {
