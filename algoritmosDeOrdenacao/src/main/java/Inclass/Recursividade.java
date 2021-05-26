@@ -11,7 +11,7 @@ package Inclass;
 public class Recursividade {
     
     public static void main(String[] args) {
-        mensagemRecursiva("olá mundo", 5);
+        mensagemRecursiva("recursividade", 5);
     }
     
     public static void mensagemRecursiva(String mensagem, int contador){
